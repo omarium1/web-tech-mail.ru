@@ -4,7 +4,7 @@ import socket
 
 s = socket.socket()
 s.bind(("0.0.0.0", 2222))
-s.listen()
+s.listen(10)
 
 while True:
     conn, addr = s.accept()
